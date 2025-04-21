@@ -9,6 +9,12 @@ public class Professor extends Pessoa{
     private int siape;
     private List<String> disciplinas = new ArrayList<>();
 
+    public Professor (String nome, long cpf, int idade, int siape, List<String> disciplinas){
+        super(nome, cpf, idade);
+        this.siape = siape;
+        this.disciplinas = disciplinas;
+    }
+
     @Override
     public void exibirDados(){   
         System.out.println("=========================");

@@ -5,6 +5,12 @@ public class Pessoa {
     private long cpf;
     private int idade;
 
+    public Pessoa (String nome, long cpf, int idade){
+        this.nome = nome;
+        this.cpf = cpf;
+        this.idade = idade;
+    }
+
     public void exibirDados(){
     }
 

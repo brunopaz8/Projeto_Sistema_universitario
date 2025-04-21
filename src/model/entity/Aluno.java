@@ -11,6 +11,13 @@ public class Aluno extends Pessoa{
     private String curso;
     private List<String> cadeiras = new ArrayList<>();
 
+    public Aluno (String nome, long cpf, int idade, long matricula, String curso, List<String> cadeiras){
+        super(nome, cpf, idade);
+        this.matricula = matricula;
+        this.curso = curso;
+        this.cadeiras  = cadeiras;
+    }
+
     @Override
     public void exibirDados() {
         System.out.println("=========================");
@@ -22,7 +29,6 @@ public class Aluno extends Pessoa{
         System.out.printf("Curso: %s \n", curso);
         System.out.printf("Cadeira/s: %s \n", String.join(", ", cadeiras));
         System.out.println("=========================");
-
     }
 
     public long getMatricula() {
